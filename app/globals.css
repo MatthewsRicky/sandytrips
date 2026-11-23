@@ -1,26 +1,273 @@
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Official Sandy Trips brand colours */
+  --brand-cyan: #00CFFF;
+  --brand-orange: #F15A29;
+  --brand-black: #000000;
+  --brand-white: #FFFFFF;
+
+  /* Supporting neutrals */
+  --brand-cyan-dark: #009FC4;
+  --brand-cyan-light: #E8FAFF;
+  --brand-orange-light: #FFF0E9;
+  --brand-ink: #171C1F;
+  --brand-muted: #737D82;
+  --brand-border: #E6ECEE;
+  --brand-surface: #F7FBFC;
+
+  /* Sand palette */
+--sand-50: #FFFCF6;
+--sand-100: #F9F3E8;
+--sand-200: #F0E5D1;
+--sand-300: #E5D3B5;
+--sand-400: #D7BD96;
+--sand-500: #C5A77D;
+--sand-600: #A98A60;
+--sand-700: #846B49;
+--sand-800: #5E4B34;
+--sand-900: #3D3022;
+
+  /* Typography */
+  --font-body: var(--font-dm-sans), Arial, sans-serif;
+  --font-display: var(--font-playfair), Georgia, serif;
+
+  /* Layout */
+  --container-width: 1280px;
+  --header-height: 84px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cyan: var(--brand-cyan);
+  --color-cyan-dark: var(--brand-cyan-dark);
+  --color-cyan-light: var(--brand-cyan-light);
+
+  --color-orange: var(--brand-orange);
+  --color-orange-light: var(--brand-orange-light);
+
+  --color-ink: var(--brand-ink);
+  --color-muted: var(--brand-muted);
+  --color-border: var(--brand-border);
+  --color-surface: var(--brand-surface);
+
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-sand-50: #FFFCF6;
+  --color-sand-100: #F9F3E8;
+  --color-sand-200: #F0E5D1;
+  --color-sand-300: #E5D3B5;
+  --color-sand-400: #D7BD96;
+  --color-sand-500: #C5A77D;
+  --color-sand-600: #A98A60;
+  --color-sand-700: #846B49;
+  --color-sand-800: #5E4B34;
+  --color-sand-900: #3D3022;
+}
+
+@layer base {
+  
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--brand-white);
+  color: var(--brand-ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+}
+
+::selection {
+  background: var(--brand-cyan);
+  color: var(--brand-black);
+}
+
+.container {
+  width: min(calc(100% - 48px), var(--container-width));
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding-block: clamp(72px, 9vw, 120px);
+}
+
+.display-font {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--brand-orange);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 26px;
+  height: 2px;
+  background: currentColor;
+  content: "";
+}
+
+.section-heading {
+  max-width: 720px;
+  color: var(--brand-black);
+  font-family: var(--font-display);
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.section-description {
+  max-width: 560px;
+  color: var(--brand-muted);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.button-primary,
+.button-secondary,
+.button-accent {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 24px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  transition:
+    background 200ms ease,
+    color 200ms ease,
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+
+.button-primary {
+  background: var(--brand-cyan);
+  color: var(--brand-black);
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+  background: var(--brand-cyan-dark);
+  color: white;
+}
+
+.button-secondary {
+  border-color: var(--brand-black);
+  background: transparent;
+  color: var(--brand-black);
+}
+
+.button-secondary:hover {
+  background: var(--brand-black);
+  color: white;
+}
+
+.button-accent {
+  background: var(--brand-orange);
+  color: white;
+}
+
+.button-accent:hover {
+  transform: translateY(-2px);
+  background: #D94719;
+}
+
+.image-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-hover {
+  overflow: hidden;
+}
+
+.image-hover img {
+  transition: transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.image-hover:hover img {
+  transform: scale(1.045);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(calc(100% - 36px), var(--container-width));
+  }
+
+  .section-padding {
+    padding-block: 68px;
+  }
+}
+
+
