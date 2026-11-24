@@ -20,7 +20,7 @@ export default function FeaturedPackages() {
             className="inline-flex shrink-0 items-center gap-2 text-xs font-bold uppercase tracking-wider text-ink transition-colors hover:text-orange"
           >
             View all experiences
-            <ArrowRight size={16} />
+            <ArrowRight size={16} className="arrow-motion" />
           </Link>
         </div>
 

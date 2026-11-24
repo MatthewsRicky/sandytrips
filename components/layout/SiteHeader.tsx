@@ -85,7 +85,7 @@ export default function SiteHeader() {
               className="button-primary mt-5 w-full"
             >
               Plan Your Trip
-              <ArrowUpRight size={15} />
+              <ArrowUpRight size={15} className="arrow-motion" />
             </Link>
           </div>
         </nav>

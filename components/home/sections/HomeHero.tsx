@@ -23,7 +23,7 @@ export default function HomeHero() {
           <div className="mt-9 flex flex-wrap gap-4">
             <Link href="/excursions" className="button-primary">
               Explore experiences
-              <ArrowRight size={17} />
+              <ArrowRight size={17} className="arrow-motion" />
             </Link>
 
             <Link href="/contact" className="button-secondary">

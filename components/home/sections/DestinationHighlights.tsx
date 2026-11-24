@@ -42,7 +42,7 @@ export default function DestinationHighlights() {
 
                   <span className="mt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-cyan">
                     Discover
-                    <ArrowUpRight size={16} />
+                    <ArrowUpRight size={16} className="arrow-motion" />
                   </span>
                 </div>
               </div>

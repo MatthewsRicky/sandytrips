@@ -126,6 +126,16 @@ img {
 }
 }
 
+@layer components {
+  .arrow-motion {
+    @apply transition-transform duration-300 ease-out;
+  }
+
+  .group:hover .arrow-motion {
+    @apply -translate-x-1 -translate-y-1;
+  }
+}
+
 ::selection {
   background: var(--brand-cyan);
   color: var(--brand-black);

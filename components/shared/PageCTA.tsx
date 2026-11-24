@@ -31,7 +31,7 @@ export default function PageCTA({
 
         <Link href={href} className="button-accent mt-9">
           {buttonLabel}
-          <ArrowUpRight size={17} />
+          <ArrowUpRight size={17} className="arrow-motion" />
         </Link>
       </div>
 

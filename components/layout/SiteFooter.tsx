@@ -129,7 +129,7 @@ export default function SiteFooter() {
               className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-sand transition-colors hover:text-white"
             >
               Make an enquiry
-              <ArrowUpRight size={15} />
+              <ArrowUpRight size={15} className="arrow-motion" />
             </Link>
           </div>
         </div>

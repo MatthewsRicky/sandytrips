@@ -21,7 +21,7 @@ export default function HomeCTA() {
         <div className="mt-9 flex flex-wrap justify-center gap-4">
           <Link href="/contact" className="button-accent">
             Make an enquiry
-            <ArrowUpRight size={17} />
+            <ArrowUpRight size={17} className="arrow-motion" />
           </Link>
 
           <Link

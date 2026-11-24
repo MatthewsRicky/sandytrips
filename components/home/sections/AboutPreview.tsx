@@ -39,7 +39,7 @@ export default function AboutPreview() {
 
           <Link href="/about" className="button-primary mt-8">
             Discover Sandy Trips
-            <ArrowUpRight size={17} />
+            <ArrowUpRight size={17} className="arrow-motion" />
           </Link>
         </div>
       </div>

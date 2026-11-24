@@ -33,7 +33,17 @@ export default function PackageGrid({
   return (
     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {packages.map((packageItem) => (
-        <PackageCard key={packageItem.id} packageItem={packageItem} />
+        <PackageCard
+          key={packageItem.id}
+          packageItem={{
+            slug: packageItem.slug,
+            title: packageItem.title,
+            description: packageItem.shortDescription,
+            image: packageItem.coverImage?.src ?? "",
+            href: `/packages/${packageItem.slug}`,
+            destination: packageItem.destination,
+          }}
+        />
       ))}
     </div>
   );

@@ -11,12 +11,26 @@ export type PackageDuration = {
   unit: "hours" | "days" | "nights";
 };
 
+export type FeaturedPackage = {
+  slug: string;
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+  href: string;
+};
 export type PackagePrice = {
   amount: number;
   currency: PackageCurrency;
   priceType: "per-person" | "per-group" | "fixed";
   label?: string;
   notes?: string;
+};
+
+export type PackageContentSection = {
+  title: string;
+  description: string;
+  image?: PackageImage;
 };
 
 export type PackageImage = {
@@ -28,6 +42,15 @@ export type PackageItineraryItem = {
   day?: number;
   title: string;
   description: string;
+  sections?: PackageContentSection[];
+};
+
+export type PackageDetailContent = {
+  description?: string;
+  highlights?: string[];
+  contentSections?: PackageContentSection[];
+  itinerary?: PackageItineraryItem[];
+  gallery?: PackageImage[];
 };
 
 export type TravelPackage = {
@@ -86,4 +109,13 @@ export type CategoryPageConfig = {
     description: string;
     buttonLabel: string;
   };
+};
+export type PackageCardItem = {
+  slug: string;
+  title: string;
+  description: string;
+  image: string;
+  href: string;
+  category?: string;
+  destination?: string;
 };

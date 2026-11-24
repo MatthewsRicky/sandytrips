@@ -43,7 +43,7 @@ export default function ExperienceCategories() {
 
                   <span className="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-cyan">
                     Explore
-                    <ArrowUpRight size={16} />
+                    <ArrowUpRight size={16} className="arrow-motion" />
                   </span>
                 </div>
               </div>

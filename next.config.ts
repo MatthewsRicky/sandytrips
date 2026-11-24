@@ -15,6 +15,15 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "sandytrips.com",
+        pathname: "/wp-content/uploads/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

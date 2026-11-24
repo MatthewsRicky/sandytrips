@@ -1,18 +1,14 @@
+import type { PackageCardItem } from "@/types/packages";
+
+
+export type FeaturedPackage = PackageCardItem;
+
 export type ExperienceCategory = {
   number: string;
   title: string;
   description: string;
   href: string;
   image: string;
-};
-
-export type FeaturedPackage = {
-  slug: string;
-  title: string;
-  category: string;
-  description: string;
-  image: string;
-  href: string;
 };
 
 export type HomeBenefit = {
