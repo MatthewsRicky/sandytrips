@@ -7,7 +7,7 @@ export const featuredPackages: FeaturedPackage[] = [
     category: "Coastal excursion",
     description:
       "Discover the history and character of one of Kenya's most iconic coastal cities.",
-    image: "/images/home/historic-mombasa.jpg",
+    image: "/images/excursions/mombasa-city-tour_sandytrips_.jpg",
     href: "/packages/historic-mombasa",
   },
   {
@@ -16,7 +16,7 @@ export const featuredPackages: FeaturedPackage[] = [
     category: "Coastal excursion",
     description:
       "Explore the coastal scenery and experiences around Wasini Island.",
-    image: "/images/home/wasini-island.jpg",
+    image: "/images/excursions/SandyTrips_Wasini-Day-Trip.jpg",
     href: "/packages/wasini-island",
   },
   {
@@ -25,7 +25,8 @@ export const featuredPackages: FeaturedPackage[] = [
     category: "Nature and wildlife",
     description:
       "Discover the landscapes and wildlife of the Shimba Hills area.",
-    image: "/images/home/shimba-hills.jpg",
+    image:
+      "/images/excursions/front-Shimba-Hills-Sheldrick-Falls-sandytrips-1.jpg",
     href: "/packages/shimba-hills",
   },
 ];

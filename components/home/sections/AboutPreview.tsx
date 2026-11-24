@@ -9,7 +9,7 @@ export default function AboutPreview() {
         <div className="relative">
           <div className="relative aspect-[5/4] overflow-hidden bg-sand-100">
             <Image
-              src="/images/home/about-experience.jpg"
+              src="/images/holidays/Cover-Manda-Bay.jpg"
               alt="A travel experience along the Kenyan coast"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

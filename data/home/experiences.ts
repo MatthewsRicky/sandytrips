@@ -7,7 +7,7 @@ export const experienceCategories: ExperienceCategory[] = [
     description:
       "Discover Kenya's coastline through memorable day trips and local experiences.",
     href: "/excursions",
-    image: "/images/home/experience-excursions.jpg",
+    image: "/images/excursions/SandyTrips_Wasini-Day-Trip.jpg",
   },
   {
     number: "02",
@@ -15,7 +15,7 @@ export const experienceCategories: ExperienceCategory[] = [
     description:
       "Explore Kenya's wildlife and landscapes on an unforgettable safari.",
     href: "/safaris",
-    image: "/images/home/experience-safaris.jpg",
+    image: "/images/safaris/Amboseli_Tsavo_East_Kenya_sandytripsltd2.jpg",
   },
   {
     number: "03",
@@ -23,6 +23,6 @@ export const experienceCategories: ExperienceCategory[] = [
     description:
       "Find your ideal coastal escape along Kenya's beautiful shoreline.",
     href: "/holidays",
-    image: "/images/home/experience-holidays.jpg",
+    image: "/images/holidays/Cover_2Almanara-Beach-3.png",
   },
 ];

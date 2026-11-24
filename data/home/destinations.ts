@@ -4,19 +4,19 @@ export const destinations: Destination[] = [
   {
     name: "Mombasa",
     description: "Coastal culture, history and ocean experiences.",
-    image: "/images/home/destination-mombasa.jpg",
+    image: "/images/destinations/SandyTrips_Mombasa.jpg",
     href: "/excursions",
   },
   {
     name: "Diani",
     description: "White-sand beaches and a relaxed coastal atmosphere.",
-    image: "/images/home/destination-diani.jpg",
+    image: "/images/destinations/SandyTrips_South-Coast.jpg",
     href: "/holidays",
   },
   {
     name: "Watamu",
     description: "Discover another beautiful stretch of the Kenyan coast.",
-    image: "/images/home/destination-watamu.jpg",
+    image: "/images/destinations/SandyTrips_Watamu.jpg",
     href: "/holidays",
   },
 ];

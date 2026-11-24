@@ -43,7 +43,7 @@ export default function HomeHero() {
         <div className="relative">
           <div className="relative aspect-[5/4] overflow-hidden rounded-sm bg-sand-200">
             <Image
-              src="/images/home/hero-coast.jpg"
+              src="/images/excursions/sandytrips-fishing-excursions3.jpg"
               alt="Kenyan coastline and turquoise Indian Ocean"
               fill
               priority

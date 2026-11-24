@@ -7,7 +7,7 @@ const icons: LucideIcon[] = [Compass, Heart, MapPin];
 
 export default function WhyChooseUs() {
   return (
-    <section className="section-padding bg-black text-white">
+    <section className="section-padding bg-sand-300 text-sand-900">
       <div className="container">
         <SectionHeading
           eyebrow="The Sandy Trips difference"
@@ -29,7 +29,7 @@ export default function WhyChooseUs() {
 
                 <h3 className="display-font mt-6 text-2xl">{benefit.title}</h3>
 
-                <p className="mt-4 text-sm leading-7 text-white/65">
+                <p className="mt-4 text-sm leading-7 text-sand-900/65">
                   {benefit.description}
                 </p>
               </article>
