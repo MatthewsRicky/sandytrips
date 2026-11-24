@@ -1,8 +1,9 @@
-import { Compass, Heart, MapPin } from "lucide-react";
+import { Compass, Heart, MapPin, type LucideIcon } from "lucide-react";
+
 import { homeBenefits } from "@/data/home/benefits";
 import SectionHeading from "@/components/home/shared/SectionHeading";
 
-const icons = [Compass, Heart, MapPin];
+const icons: LucideIcon[] = [Compass, Heart, MapPin];
 
 export default function WhyChooseUs() {
   return (
