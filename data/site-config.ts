@@ -23,7 +23,7 @@ export const siteConfig = {
     { label: "Home", href: "/" },
     { label: "Excursions", href: "/excursions" },
     { label: "Safaris", href: "/safaris" },
-    { label: "Beach Holidays", href: "/holidays" },
+    { label: "Beach Holidays", href: "/beach-hotels" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
   ],
