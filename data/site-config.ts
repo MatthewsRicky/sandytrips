@@ -22,14 +22,13 @@ export const siteConfig = {
   navigation: [
     { label: "Home", href: "/" },
     { label: "Excursions", href: "/excursions" },
-    { label: "Safaris", href: "/safaris" },
     { label: "Beach Holidays", href: "/beach-hotels" },
     { label: "About Us", href: "/about" },
     {
       label: "Our Fleet",
       href: "/fleet",
     },
-    { label: "Gallery", href: "/gallery"},
+    { label: "Gallery", href: "/gallery" },
     { label: "Contact", href: "/contact" },
   ],
 } as const;
