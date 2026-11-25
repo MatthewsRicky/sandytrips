@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
 
@@ -6,17 +7,19 @@ import { siteConfig } from "@/data/site-config";
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-sand-600/60 text-white">
+    <footer className="bg-sand-300/95 text-sand-900">
       <div className="container py-16 md:py-20">
         <div className="grid gap-12 border-b border-white/15 pb-14 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div className="max-w-sm">
             <Link href="/" className="inline-block">
-              <span className="font-serif text-4xl tracking-[-0.06em]">
-                sandy<span className="text-orange">.</span>
-              </span>
+            <Image src="/images/branding/SandyTrips-Logo3-2.png"
+                        alt="logo"
+                        width={100}
+                        height={100}
+                        />
             </Link>
 
-            <p className="mt-5 max-w-xs text-sm leading-8 text-white/60">
+            <p className="mt-5 max-w-xs text-sm leading-8 text-sand-900/80">
               Discover the beauty of Kenya through unforgettable excursions,
               safari adventures and coastal escapes.
             </p>
@@ -53,7 +56,7 @@ export default function SiteFooter() {
               Explore
             </h3>
 
-            <ul className="space-y-4 text-sm text-white/65">
+            <ul className="space-y-4 text-sm text-sand-900/70">
               <li>
                 <Link
                   className="transition-colors hover:text-white"
@@ -94,7 +97,7 @@ export default function SiteFooter() {
               Information
             </h3>
 
-            <ul className="space-y-4 text-sm text-white/65">
+            <ul className="space-y-4 text-sm text-sand-900/65">
               <li>
                 <Link
                   className="transition-colors hover:text-white"
@@ -119,7 +122,7 @@ export default function SiteFooter() {
               Get in touch
             </h3>
 
-            <p className="text-sm leading-7 text-white/65">
+            <p className="text-sm leading-7 text-sand-900/65">
               Have a destination in mind? Let's start planning your next
               experience.
             </p>
@@ -134,7 +137,7 @@ export default function SiteFooter() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 pt-7 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 pt-7 text-xs text-sand-900/75 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 {siteConfig.name}. All rights reserved.</p>
 
           <p>Discover more. Experience more.</p>

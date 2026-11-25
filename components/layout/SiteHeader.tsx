@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
@@ -9,21 +10,26 @@ export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-cream/95 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border bg-sand-300/95 text-sand-900 backdrop-blur-md">
       <div className="container">
         <div className="flex h-[80px] items-center justify-between">
           <Link
             href="/"
-            className="group flex flex-col leading-none"
+            className="group flex leading-none"
             onClick={() => setMenuOpen(false)}
             aria-label="Sandy Trips home"
           >
-            <span className="font-serif text-[30px] tracking-[-0.06em] text-ocean">
+            <Image src="/images/branding/SandyTrips-Logo3-2.png"
+            alt="logo"
+            width={100}
+            height={100}
+            />
+            {/* <span className="font-serif text-[30px] tracking-[-0.06em] text-ocean">
               sandy<span className="text-teal">.</span>
             </span>
             <span className="mt-1 text-[9px] font-bold uppercase tracking-[0.25em] text-muted">
               Trips & Experiences
-            </span>
+            </span> */}
           </Link>
 
           <nav
