@@ -3,7 +3,7 @@ import { Resend } from "resend";
 
 import { enquirySchema } from "@/lib/validation/enquiry";
 
-export const runtime = "nodejs";
+// export const runtime = "nodejs";
 
 function escapeHtml(value: string) {
   return value
